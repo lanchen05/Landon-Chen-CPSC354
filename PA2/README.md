@@ -43,6 +43,6 @@ elif tree[0] == 'lam':
 
 This is important because without it, expressions inside lambdas wouldn't get reduced. For example, `(\x.(\y.y) x)` wouldn't fully reduce.
 
-## IMpact
+## Impact
 
 With these changes, the interpreter actually reduces everything to normal form. Before, it would only do partial evaluation and leave some reducible parts in the output. Now it fully simplifies everything.
